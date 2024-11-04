@@ -16,32 +16,32 @@ class LinkedList
 {
 public:
     Node *head = NULL;
-    void create(vector<int>);
-    void display();
-    void rDisplay(Node *);
-    int size();
-    int rSize(Node *);
-    int sum();
-    int rSum(Node *);
-    int getMax();
-    int getRMax(Node *);
-    Node *search(int);
-    Node *rSearch(Node *, int);
-    void insertFirst(int);
-    void append(int);
-    void insert(int);
-    void insert(int, int);
-    void deleteFirst();
-    void deleteLast();
-    void remove(int);
-    bool isSorted();
-    void removeDuplicates();
-    void reverseElement();
-    void reverse();
-    void rReverse(Node *, Node *);
-    void concat(Node *);
-    void merge(Node *);
-    static bool hasLoop(Node *);
+    void create(vector<int>);      // create list from vector
+    void display();                // displays list
+    void rDisplay(Node *);         // displays list using recursion
+    int size();                    // returns the no. of nodes in list
+    int rSize(Node *);             // returns the no. fo nodes in list using recursion
+    int sum();                     // returns sum of all list elements
+    int rSum(Node *);              // returns sum of all list elements using recursion
+    int getMax();                  // returns the maximum element from list
+    int getRMax(Node *);           // returns the maximum element from list using recursion
+    Node *search(int);             // searches element in the list
+    Node *rSearch(Node *, int);    // searches element in the list using recursion
+    void insertFirst(int);         // inserts node at first
+    void append(int);              // inserts node at last
+    void insert(int);              // inserts node in a sorted list
+    void insert(int, int);         // inserts node at a given position
+    void deleteFirst();            // deletes first node
+    void deleteLast();             // deletes last node
+    void remove(int);              // deletes node from a given position
+    bool isSorted();               // checks whether a linked is sorted or not
+    void removeDuplicates();       // removes duplicates from list
+    void reverseElement();         // reverse list by changing data field from list
+    void reverse();                // reverse list by changing referece from link field(sliding pointer approach)
+    void rReverse(Node *, Node *); // reverse list using recursion
+    void concat(Node *);           // concat two list
+    void merge(Node *);            // merges two list
+    static bool hasLoop(Node *);   // checks whether a list has a loop or not
 };
 
 void LinkedList::create(vector<int> nums)
