@@ -1,0 +1,16 @@
++++++Pointers To Structure+++++
+
+struct rectangle
+{
+    int length;
+    int breadth;
+};
+int main()
+{
+    struct rectangle *r;
+    r->length=34;       Accesing structure member using "Arrow Operator"
+        OR
+    (*r).length=34;         Accesing structure member using ". operator".
+                            The precedency of "dot operator" is higher than "* operator" hence we use "bracket()"
+                            to give fist precedency to *r.
+}

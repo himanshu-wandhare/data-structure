@@ -1,0 +1,19 @@
+    +++ Pointers +++
+Q. Why we need poitners?
+    1. To access the Heap memory
+    2. To use the external files in the hardisk.
+    3. To access resources of Monitor, keyboards ,etc (Hardware)
+    4. Parameter Passing
+
+Major role: Accessing the resources which are outside(external) the program
+
+
+Q. How allocate memory in Heap?
+int main()
+{
+    int *p;
+    p=(int*)malloc(5*sizeof(int));         It will allocate memeory for 5 integer (It is also called as dynamic
+                                           memory allocation)       C format
+
+    p=new int[5];                          In C++ format
+}
